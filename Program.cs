@@ -8,3 +8,7 @@ for(int i = 0; i<5; i++ )
 }
 return Array;
 }
+
+string[] Array = FillArray();
+Console.WriteLine("Начальный массив:");
+Console.WriteLine($"[{String.Join(",", Array)}]");
