@@ -35,3 +35,6 @@ string[] ChangeArray(string[] Array)
     }
     return NewArray;
 }
+
+Console.WriteLine("Обработанный массив:");
+Console.WriteLine($"[{String.Join(",", ChangeArray(Array))}]");
