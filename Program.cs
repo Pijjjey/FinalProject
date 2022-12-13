@@ -12,3 +12,26 @@ return Array;
 string[] Array = FillArray();
 Console.WriteLine("Начальный массив:");
 Console.WriteLine($"[{String.Join(",", Array)}]");
+
+string[] ChangeArray(string[] Array)
+{   
+    int num = 0;
+    for(int i = 0; i<5; i++ )
+{
+    if(Array[i].Length<=3)
+    {
+        num++;
+    }
+}
+    string[] NewArray = new string[num];
+    int k = 0;
+    for(int i = 0; i<5; i++)
+    {
+        if(Array[i].Length <= 3)
+        {
+            NewArray[k] = Array[i];
+            k++;
+        }
+    }
+    return NewArray;
+}
